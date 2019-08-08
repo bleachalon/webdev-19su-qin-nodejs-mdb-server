@@ -1,12 +1,10 @@
 var express = require('express')
 var app = express()
 var mongoose = require('mongoose')
+var connect = require("./data/db.js")
 
+connect()
 //mongoose.connect('mongodb://localhost:27017/whiteboard', {useNewUrlParser: true});
-
-var username = process.env.MY_MONGODB_USERNAME;
-var password = process.env.MY_MONGODB_PASSWORD;
-mongoose.connect('mongodb://'+username+':'+password+'@ds127655.mlab.com:27655/heroku_6d1bnhgk', {useNewUrlParser: true});
 
 // Configure parsing JSON from body
 var bodyParser = require('body-parser')
