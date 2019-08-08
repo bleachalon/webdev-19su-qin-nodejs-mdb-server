@@ -1,6 +1,5 @@
 var express = require('express')
 var app = express()
-var mongoose = require('mongoose')
 var connect = require("./data/db.js")
 
 connect()
