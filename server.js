@@ -31,4 +31,4 @@ var studentService = require("./services/student.service.server")(app)
 var questionService = require("./services/question.service.server")(app)
 var answerService = require("./services/answer.service.server")(app)
 
-app.listen(3000)
+app.listen(process.env.PORT || 3000)

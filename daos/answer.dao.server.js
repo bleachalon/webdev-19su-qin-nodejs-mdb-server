@@ -1,4 +1,4 @@
-var answerModel = require("../models/answer.model.server.js")
+var answerModel = require("../data/models/answer.model.server.js")
 
 function answerQuestion(answer){
     return answerModel.create(answer);
